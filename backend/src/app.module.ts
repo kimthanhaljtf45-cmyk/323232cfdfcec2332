@@ -61,6 +61,9 @@ import { TenantsModule } from './modules/tenants/tenants.module';
 // Phase 7: WayForPay Integration
 import { WayForPayModule } from './modules/wayforpay/wayforpay.module';
 
+// Phase 8: Control System (100 clubs scale)
+import { ControlSystemModule } from './modules/control-system/control-system.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -134,6 +137,9 @@ import { WayForPayModule } from './modules/wayforpay/wayforpay.module';
 
     // Phase 7: WayForPay Integration
     WayForPayModule,
+
+    // Phase 8: Control System (100 clubs scale)
+    ControlSystemModule,
   ],
 })
 export class AppModule {}
